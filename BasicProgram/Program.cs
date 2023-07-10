@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Basic Core Program");
+            CorePrograms corePrograms = new CorePrograms();
+            corePrograms.FLIP_COIN();
         }
     }
 }
