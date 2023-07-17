@@ -30,9 +30,8 @@ namespace BasicCorePrograms
              headPercentage = (double) head / noOfFlips * 100;
              tailPercentage = (double) tail / noOfFlips * 100;
 
-              Console.WriteLine($"Heads percentage: {head} {headPercentage}");
-              Console.WriteLine($"Tails Percentage: {tail} {tailPercentage}");
-           //Console.WriteLine("Percentage of Tails : {0} \nPercentage of Heads: {1}", tailPercentage, headPercentage);
+              Console.WriteLine("Heads percentage:" + headPercentage);
+              Console.WriteLine("Tails Percentage:" + tailPercentage);
         }
     }
 }
