@@ -10,21 +10,14 @@ namespace BasicCorePrograms
     {
         public void GetHarmonicNumber()
         {
-            double HarmonicNum = 0, reciprocal;
+            double sum = 0;
             Console.WriteLine("Please enter a number to calculate Nth Harmonic value");
             int n = Convert.ToInt32(Console.ReadLine());
-            if (n > 0)
+            for (int i = 1; i <= n; i++)
             {
-                for (int i = 1; i <= n; i++)
-                {
-                    reciprocal = (double)1 / i;
-                    HarmonicNum = HarmonicNum + reciprocal;
-                    Console.Write("1/" + i + " + ");
-                }
-                Console.WriteLine("\nNth Harmonic value is : " + HarmonicNum);
+                sum +=(double)1 / i;
             }
-            else
-                Console.WriteLine("Please enter a number greater than zero");
+            Console.WriteLine("Sum is : {0}", sum);
         }
     }
 }
